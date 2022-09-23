@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap'); /* column*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap'); /*body*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.Container {
+    margin-top : 20px;
+    margin-bottom : 10px;
+
+    overflow: auto;
+    position: relative;
+}
+
+.Container::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('haunted200.jpg');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.Container h3 {
+    text-align: left;
+    padding: 10px 27px;
+    margin-left: 10px;
+    background-color: rgb(145, 135, 122);
+    border: 2px solid rgb(138, 71, 71);
+    margin-right: 86%;
+    font-weight: bold;
+    font-family: 'DynaPuff', cursive;
+    color: white;
+}
+
+.Container .heading {
+    padding-bottom: 15px;
+    font-size: 4.5em;
+    color: whitesmoke;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: -2px 2px 0 rgb(0, 0, 0),
+                  2px 2px 0 black,
+                  2px -2px 0 black,
+                 -2px -2px 0 black;
+}
+
+.Container .underline {
+    background-color: aqua;
+    height: 2px;
+    border:1px solid rgb(0, 217, 255);
+    border-radius: 1px;
+    margin-top: 5px;
+}
+
+.Container .underline-2 p{
+    text-decoration-line: overline underline;
+    text-align: center ;
+    padding-top: 7px;
+    margin-bottom: 15px;
+    color: rgb(229, 255, 0);
+    background-color: brown;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.Container .ufology p {
+    margin: 10px;
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+}
+
+.subHead {
+    font-family: 'Rubik Dirt', cursive ;
+    font-weight: 100;
+    color: whitesmoke;
+    margin: 11px;
+    text-align: center;
+    background-color: rgb(145, 135, 122);
+    padding: 17px 21px;
+    margin-left: 37%;
+    margin-right: 34vw;
+}
+
+.introducing p {
+    text-indent: 5vw;
+    margin: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    padding-right: 0.5vw;
+  }
+
+.col {
+    float: left;
+    width: 50%;
+    width: 50%;
+    text-align:center;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.Container img {
+    display: inline;
+    float: right;
+    max-width: 25%;
+    height: auto;
+    margin: -4px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.ParaSub h4 {
+    margin: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: -2px 2px 0 rgb(141, 3, 196),
+                  2px 2px 0 rgb(141, 3, 196),
+                  2px -2px 0 rgb(141, 3, 196),
+                 -2px -2px 0 rgb(141, 3, 196);
+    color: rgb(253, 253, 253);
+}
+
+.ParaSub p {
+    margin: 0 12px;
+    font-size: 1.15em;
+    color: white;
+}
+
+@media (max-width:1024px) {
+    .Container h3 {
+        padding: 10px 4px;
+    }
+}
+
+@media (max-width:900px) {
+    .Container h3 {
+        margin-right: 80%;
+        padding: 10px 9px;
+    }
+}
+
+@media (max-width:750px) {
+    .Container .heading {
+        font-size: 3em;
+    }
+
+    .Container .subHead {
+        font-size: 1.5em;
+    }
+
+    .Container h3 {
+        font-size: 15px;
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width:600px) {
+    .Container .subHead {
+        padding: 7px 5px;
+    }
+
+    .Container h3 {
+        padding: 7px 1px;
+    }
+}
+
+@media (max-width:425px) {
+    .Container .subHead {
+        font-size: 16px;
+        padding: 7px 5px;
+    }
+
+    .Container h3 {
+        font-size: 12px;
+        margin-right: 68vw;
+        padding-left: 10px;
+    }
+}
+
+
+
+/* FOOTER*/
+
+.full{
+    background-color: rgb(27, 8, 8);
+   /* position: absolute; */
+    left: 0;
+    right: 0;
+    height: auto;
+   /* width: 100vw; */
+    padding-top: 4px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(189, 178, 178);
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 2rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: rgb(189, 178, 178);
+    border: 2.2px solid rgb(189, 178, 178);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer-menu{
+    margin-bottom: 20px;
+  }
+
+  .footer-menu ul{
+    display: flex;
+  }
+
+  .footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+  }
+
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    border: 1px solid white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+
+  .footer-menu ul li a:hover{
+    color: #27bcda;
+  }
+
+  .footer-bottom{
+    background: #000;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-bottom .copy {
+    font-size: 10px;
+}
+
+.footer-bottom p{
+    color: #9ba5a5;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a{
+    color: #5090a9;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media (max-width:700px) {
+    .footer-menu ul {
+      display: inline;
+    }
+
+    .footer-content h3 {
+        font-size: 20px;
+    }
+
+    .footer-bottom{
+      /*  display: inline; */ 
+        padding: absolute;
+    }
+
+    .footer-menu ul li {
+      margin-bottom: 20px;
+    }
+}
